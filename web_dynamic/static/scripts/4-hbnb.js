@@ -85,11 +85,11 @@ $(function () {
   const SearchButtonElement = $('button');
   
   SearchButtonElement.click(function () {
-    amenities = []
-    for (const amenity_id of checkedBoxs) {
-      amenities.push(checkedBoxs[amenity_id])
+    amenity_ids = []
+    for (const amenity_name in checkedBoxs) {
+      amenity_ids.push(checkedBoxs[amenity_name])
     }
-    placesSearch({'amenity_ids': amenities})
+    placesSearch({'amenity_ids': amenity_ids})
   });
 
 });
