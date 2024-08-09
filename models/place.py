@@ -51,6 +51,7 @@ class Place(BaseModel, Base):
         latitude = 0.0
         longitude = 0.0
         amenity_ids = []
+        user=""
 
     def __init__(self, *args, **kwargs):
         """initializes Place"""
