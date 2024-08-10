@@ -1,5 +1,3 @@
-
-
 $(function () {
   const checkedBoxs = {};
   let index = 0;
